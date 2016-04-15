@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "TCCocoaExpand"
   s.version      = "0.0.1"
-  s.summary      = "A short description of TCCocoaExpand."
+  s.summary      = "Cocoa's categories"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                   CocoaExpand
+                   Cocoa's categories easy to use frame layout
                    DESC
 
   s.homepage     = "https://github.com/tauCross/TCCocoaExpand"
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "git@github.com:tauCross/TCCocoaExpand.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/tauCross/TCCocoaExpand.git", :tag => "0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
