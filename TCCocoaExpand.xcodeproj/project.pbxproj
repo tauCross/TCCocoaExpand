@@ -15,6 +15,14 @@
 		5B79A0B11CC0C2BE00325F0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B79A0AF1CC0C2BE00325F0A /* LaunchScreen.storyboard */; };
 		5B79A0BD1CC0C5BB00325F0A /* UIView+TCCocoaExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B79A0BC1CC0C5BB00325F0A /* UIView+TCCocoaExpand.m */; };
 		5B79A0C11CC0CD4100325F0A /* UIImage+TCCocoaExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B79A0C01CC0CD4100325F0A /* UIImage+TCCocoaExpand.m */; };
+		5B79A0C41CC0CFCA00325F0A /* UIColor+TCCocoaExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B79A0C31CC0CFCA00325F0A /* UIColor+TCCocoaExpand.m */; };
+		5B79A0C71CC0D29000325F0A /* UIFont+TCCocoaExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B79A0C61CC0D29000325F0A /* UIFont+TCCocoaExpand.m */; };
+		5B79A0CD1CC0DA1700325F0A /* NSString+TCCocoaExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B79A0CC1CC0DA1700325F0A /* NSString+TCCocoaExpand.m */; };
+		5B79A0D01CC0DB7500325F0A /* UIActionSheet+TCCocoaExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B79A0CF1CC0DB7500325F0A /* UIActionSheet+TCCocoaExpand.m */; };
+		5B79A0D31CC0DCA500325F0A /* UIImagePickerController+TCCocoaExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B79A0D21CC0DCA500325F0A /* UIImagePickerController+TCCocoaExpand.m */; };
+		5B79A0D61CC0DE5700325F0A /* NSArray+TCCocoaExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B79A0D51CC0DE5700325F0A /* NSArray+TCCocoaExpand.m */; };
+		5B79A0D91CC0DEFB00325F0A /* UIAlertView+TCCocoaExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B79A0D81CC0DEFB00325F0A /* UIAlertView+TCCocoaExpand.m */; };
+		5B79A0DC1CC0DF9900325F0A /* MFMailComposeViewController+TCCocoaExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B79A0DB1CC0DF9900325F0A /* MFMailComposeViewController+TCCocoaExpand.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +42,22 @@
 		5B79A0BE1CC0C5D000325F0A /* TCCocoaExpand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCCocoaExpand.h; sourceTree = "<group>"; };
 		5B79A0BF1CC0CD4100325F0A /* UIImage+TCCocoaExpand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TCCocoaExpand.h"; sourceTree = "<group>"; };
 		5B79A0C01CC0CD4100325F0A /* UIImage+TCCocoaExpand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TCCocoaExpand.m"; sourceTree = "<group>"; };
+		5B79A0C21CC0CFCA00325F0A /* UIColor+TCCocoaExpand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TCCocoaExpand.h"; sourceTree = "<group>"; };
+		5B79A0C31CC0CFCA00325F0A /* UIColor+TCCocoaExpand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TCCocoaExpand.m"; sourceTree = "<group>"; };
+		5B79A0C51CC0D29000325F0A /* UIFont+TCCocoaExpand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+TCCocoaExpand.h"; sourceTree = "<group>"; };
+		5B79A0C61CC0D29000325F0A /* UIFont+TCCocoaExpand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+TCCocoaExpand.m"; sourceTree = "<group>"; };
+		5B79A0CB1CC0DA1700325F0A /* NSString+TCCocoaExpand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TCCocoaExpand.h"; sourceTree = "<group>"; };
+		5B79A0CC1CC0DA1700325F0A /* NSString+TCCocoaExpand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TCCocoaExpand.m"; sourceTree = "<group>"; };
+		5B79A0CE1CC0DB7500325F0A /* UIActionSheet+TCCocoaExpand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+TCCocoaExpand.h"; sourceTree = "<group>"; };
+		5B79A0CF1CC0DB7500325F0A /* UIActionSheet+TCCocoaExpand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+TCCocoaExpand.m"; sourceTree = "<group>"; };
+		5B79A0D11CC0DCA500325F0A /* UIImagePickerController+TCCocoaExpand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImagePickerController+TCCocoaExpand.h"; sourceTree = "<group>"; };
+		5B79A0D21CC0DCA500325F0A /* UIImagePickerController+TCCocoaExpand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImagePickerController+TCCocoaExpand.m"; sourceTree = "<group>"; };
+		5B79A0D41CC0DE5700325F0A /* NSArray+TCCocoaExpand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+TCCocoaExpand.h"; sourceTree = "<group>"; };
+		5B79A0D51CC0DE5700325F0A /* NSArray+TCCocoaExpand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+TCCocoaExpand.m"; sourceTree = "<group>"; };
+		5B79A0D71CC0DEFB00325F0A /* UIAlertView+TCCocoaExpand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+TCCocoaExpand.h"; sourceTree = "<group>"; };
+		5B79A0D81CC0DEFB00325F0A /* UIAlertView+TCCocoaExpand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+TCCocoaExpand.m"; sourceTree = "<group>"; };
+		5B79A0DA1CC0DF9900325F0A /* MFMailComposeViewController+TCCocoaExpand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MFMailComposeViewController+TCCocoaExpand.h"; sourceTree = "<group>"; };
+		5B79A0DB1CC0DF9900325F0A /* MFMailComposeViewController+TCCocoaExpand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MFMailComposeViewController+TCCocoaExpand.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +121,22 @@
 				5B79A0BC1CC0C5BB00325F0A /* UIView+TCCocoaExpand.m */,
 				5B79A0BF1CC0CD4100325F0A /* UIImage+TCCocoaExpand.h */,
 				5B79A0C01CC0CD4100325F0A /* UIImage+TCCocoaExpand.m */,
+				5B79A0C21CC0CFCA00325F0A /* UIColor+TCCocoaExpand.h */,
+				5B79A0C31CC0CFCA00325F0A /* UIColor+TCCocoaExpand.m */,
+				5B79A0C51CC0D29000325F0A /* UIFont+TCCocoaExpand.h */,
+				5B79A0C61CC0D29000325F0A /* UIFont+TCCocoaExpand.m */,
+				5B79A0CE1CC0DB7500325F0A /* UIActionSheet+TCCocoaExpand.h */,
+				5B79A0CF1CC0DB7500325F0A /* UIActionSheet+TCCocoaExpand.m */,
+				5B79A0D71CC0DEFB00325F0A /* UIAlertView+TCCocoaExpand.h */,
+				5B79A0D81CC0DEFB00325F0A /* UIAlertView+TCCocoaExpand.m */,
+				5B79A0D11CC0DCA500325F0A /* UIImagePickerController+TCCocoaExpand.h */,
+				5B79A0D21CC0DCA500325F0A /* UIImagePickerController+TCCocoaExpand.m */,
+				5B79A0CB1CC0DA1700325F0A /* NSString+TCCocoaExpand.h */,
+				5B79A0CC1CC0DA1700325F0A /* NSString+TCCocoaExpand.m */,
+				5B79A0D41CC0DE5700325F0A /* NSArray+TCCocoaExpand.h */,
+				5B79A0D51CC0DE5700325F0A /* NSArray+TCCocoaExpand.m */,
+				5B79A0DA1CC0DF9900325F0A /* MFMailComposeViewController+TCCocoaExpand.h */,
+				5B79A0DB1CC0DF9900325F0A /* MFMailComposeViewController+TCCocoaExpand.m */,
 			);
 			path = TCCocoaExpand;
 			sourceTree = "<group>";
@@ -173,8 +213,16 @@
 			files = (
 				5B79A0A91CC0C2BE00325F0A /* ViewController.m in Sources */,
 				5B79A0BD1CC0C5BB00325F0A /* UIView+TCCocoaExpand.m in Sources */,
+				5B79A0CD1CC0DA1700325F0A /* NSString+TCCocoaExpand.m in Sources */,
+				5B79A0C41CC0CFCA00325F0A /* UIColor+TCCocoaExpand.m in Sources */,
+				5B79A0DC1CC0DF9900325F0A /* MFMailComposeViewController+TCCocoaExpand.m in Sources */,
+				5B79A0D31CC0DCA500325F0A /* UIImagePickerController+TCCocoaExpand.m in Sources */,
 				5B79A0A61CC0C2BE00325F0A /* AppDelegate.m in Sources */,
 				5B79A0C11CC0CD4100325F0A /* UIImage+TCCocoaExpand.m in Sources */,
+				5B79A0C71CC0D29000325F0A /* UIFont+TCCocoaExpand.m in Sources */,
+				5B79A0D01CC0DB7500325F0A /* UIActionSheet+TCCocoaExpand.m in Sources */,
+				5B79A0D61CC0DE5700325F0A /* NSArray+TCCocoaExpand.m in Sources */,
+				5B79A0D91CC0DEFB00325F0A /* UIAlertView+TCCocoaExpand.m in Sources */,
 				5B79A0A31CC0C2BE00325F0A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
