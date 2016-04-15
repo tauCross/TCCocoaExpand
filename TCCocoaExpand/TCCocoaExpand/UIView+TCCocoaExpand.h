@@ -27,4 +27,7 @@
 
 - (void)removeAllSubView;
 
+- (void)rotateTimerClockwiseSpeed:(CGFloat)speed;
+- (void)stopTimerAnimation;
+
 @end

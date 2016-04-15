@@ -8,6 +8,16 @@
 
 #import "UIView+TCCocoaExpand.h"
 
+#import <objc/runtime.h>
+
+
+
+@interface UIView ()
+
+@property(nonatomic, strong)CADisplayLink *rotateLink;
+@property(nonatomic, assign)CGFloat rotateSpeed;
+
+@end
 
 
 @implementation UIView (TCCocoaExpand)
@@ -141,5 +151,55 @@
         [subView removeFromSuperview];
     }
 }
+
+- (void)rotateTimerClockwiseSpeed:(CGFloat)speed
+{
+    self.rotateSpeed = speed;
+    if(self.rotateLink == nil)
+    {
+        self.rotateLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(rotateAnimation)];
+        [self.rotateLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
+    }
+}
+
+- (void)stopTimerAnimation
+{
+    [self.rotateLink invalidate];
+    self.rotateLink = nil;
+}
+
+- (void)rotateAnimation
+{
+    if(self.superview == nil)
+    {
+        [self stopTimerAnimation];
+        return;
+    }
+    self.layer.transform = CATransform3DRotate(self.layer.transform, M_PI * 2 / (self.rotateSpeed * 60), 0, 0, 1);
+}
+
+#pragma mark -
+static char uiview_rotate_link_key;
+static char uiview_rotate_speed_key;
+- (void)setRotateLink:(CADisplayLink *)rotateLink
+{
+    objc_setAssociatedObject(self, &uiview_rotate_link_key, rotateLink, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (CADisplayLink *)rotateLink
+{
+    return objc_getAssociatedObject(self, &uiview_rotate_link_key);
+}
+
+- (void)setRotateSpeed:(CGFloat)rotateSpeed
+{
+    objc_setAssociatedObject(self, &uiview_rotate_speed_key, @(rotateSpeed), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (CGFloat)rotateSpeed
+{
+    return [objc_getAssociatedObject(self, &uiview_rotate_speed_key) doubleValue];
+}
+
 
 @end
