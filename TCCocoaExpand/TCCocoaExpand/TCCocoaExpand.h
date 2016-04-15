@@ -10,5 +10,6 @@
 #define TCCocoaExpand_h
 
 #import "UIView+TCCocoaExpand.h"
+#import "UIImage+TCCocoaExpand.h"
 
 #endif /* TCCocoaExpand_h */

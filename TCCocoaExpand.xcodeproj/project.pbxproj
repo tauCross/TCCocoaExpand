@@ -14,6 +14,7 @@
 		5B79A0AE1CC0C2BE00325F0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B79A0AD1CC0C2BE00325F0A /* Assets.xcassets */; };
 		5B79A0B11CC0C2BE00325F0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B79A0AF1CC0C2BE00325F0A /* LaunchScreen.storyboard */; };
 		5B79A0BD1CC0C5BB00325F0A /* UIView+TCCocoaExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B79A0BC1CC0C5BB00325F0A /* UIView+TCCocoaExpand.m */; };
+		5B79A0C11CC0CD4100325F0A /* UIImage+TCCocoaExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B79A0C01CC0CD4100325F0A /* UIImage+TCCocoaExpand.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		5B79A0BB1CC0C5BB00325F0A /* UIView+TCCocoaExpand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TCCocoaExpand.h"; sourceTree = "<group>"; };
 		5B79A0BC1CC0C5BB00325F0A /* UIView+TCCocoaExpand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TCCocoaExpand.m"; sourceTree = "<group>"; };
 		5B79A0BE1CC0C5D000325F0A /* TCCocoaExpand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCCocoaExpand.h; sourceTree = "<group>"; };
+		5B79A0BF1CC0CD4100325F0A /* UIImage+TCCocoaExpand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TCCocoaExpand.h"; sourceTree = "<group>"; };
+		5B79A0C01CC0CD4100325F0A /* UIImage+TCCocoaExpand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TCCocoaExpand.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 				5B79A0BE1CC0C5D000325F0A /* TCCocoaExpand.h */,
 				5B79A0BB1CC0C5BB00325F0A /* UIView+TCCocoaExpand.h */,
 				5B79A0BC1CC0C5BB00325F0A /* UIView+TCCocoaExpand.m */,
+				5B79A0BF1CC0CD4100325F0A /* UIImage+TCCocoaExpand.h */,
+				5B79A0C01CC0CD4100325F0A /* UIImage+TCCocoaExpand.m */,
 			);
 			path = TCCocoaExpand;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 				5B79A0A91CC0C2BE00325F0A /* ViewController.m in Sources */,
 				5B79A0BD1CC0C5BB00325F0A /* UIView+TCCocoaExpand.m in Sources */,
 				5B79A0A61CC0C2BE00325F0A /* AppDelegate.m in Sources */,
+				5B79A0C11CC0CD4100325F0A /* UIImage+TCCocoaExpand.m in Sources */,
 				5B79A0A31CC0C2BE00325F0A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
