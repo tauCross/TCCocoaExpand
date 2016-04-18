@@ -9,6 +9,6 @@ pod "TCCocoaExpand"
 
 #### usage
 ```Objective-C
-#import "TCCocoaExpand.h"
+#import <TCCocoaExpand.h>
 ```
 * you can import TCCocoaExpand in .pch
