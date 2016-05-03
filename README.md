@@ -4,10 +4,10 @@
 
 ```ruby
 platform :ios, '7.0'
-pod "TCCocoaExpand"
+pod 'TCCocoaExpand'
 ```
 
-#### usage
+#### Usage
 ```Objective-C
 #import <TCCocoaExpand.h>
 ```
