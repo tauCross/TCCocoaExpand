@@ -52,15 +52,4 @@ static char image_picker_cancel_block_key;
     }
 }
 
-- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
-{
-    if(self.sourceType == UIImagePickerControllerSourceTypePhotoLibrary)
-    {
-        UIView *custom = [[UIView alloc] initWithFrame:CGRectMake(0,0,0,0)];
-        UIBarButtonItem *btn = [[UIBarButtonItem alloc] initWithCustomView:custom];
-        [viewController.navigationItem setRightBarButtonItem:btn animated:NO];
-    }
-}
-
-
 @end
