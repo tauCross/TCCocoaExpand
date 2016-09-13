@@ -58,4 +58,9 @@
     return [hash lowercaseString];
 }
 
+- (NSURL *)url
+{
+    return [NSURL URLWithString:self];
+}
+
 @end

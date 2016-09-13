@@ -17,5 +17,6 @@
 - (NSString *)clearSpace;
 - (NSString *)encodeURL;
 - (NSString *)md5;
+- (NSURL *)url;
 
 @end
