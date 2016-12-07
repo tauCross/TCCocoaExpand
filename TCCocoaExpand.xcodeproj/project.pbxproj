@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5340BE1F1DF7B9DD00E8DBC6 /* NSData+TCCocoaExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5340BE1E1DF7B9DD00E8DBC6 /* NSData+TCCocoaExpand.m */; };
 		5B79A0A31CC0C2BE00325F0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B79A0A21CC0C2BE00325F0A /* main.m */; };
 		5B79A0A61CC0C2BE00325F0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B79A0A51CC0C2BE00325F0A /* AppDelegate.m */; };
 		5B79A0A91CC0C2BE00325F0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B79A0A81CC0C2BE00325F0A /* ViewController.m */; };
@@ -26,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5340BE1D1DF7B9DD00E8DBC6 /* NSData+TCCocoaExpand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+TCCocoaExpand.h"; sourceTree = "<group>"; };
+		5340BE1E1DF7B9DD00E8DBC6 /* NSData+TCCocoaExpand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+TCCocoaExpand.m"; sourceTree = "<group>"; };
 		5B79A09E1CC0C2BE00325F0A /* TCCocoaExpand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCCocoaExpand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B79A0A21CC0C2BE00325F0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5B79A0A41CC0C2BE00325F0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -137,6 +140,8 @@
 				5B79A0D51CC0DE5700325F0A /* NSArray+TCCocoaExpand.m */,
 				5B79A0DA1CC0DF9900325F0A /* MFMailComposeViewController+TCCocoaExpand.h */,
 				5B79A0DB1CC0DF9900325F0A /* MFMailComposeViewController+TCCocoaExpand.m */,
+				5340BE1D1DF7B9DD00E8DBC6 /* NSData+TCCocoaExpand.h */,
+				5340BE1E1DF7B9DD00E8DBC6 /* NSData+TCCocoaExpand.m */,
 			);
 			path = TCCocoaExpand;
 			sourceTree = "<group>";
@@ -224,6 +229,7 @@
 				5B79A0D61CC0DE5700325F0A /* NSArray+TCCocoaExpand.m in Sources */,
 				5B79A0D91CC0DEFB00325F0A /* UIAlertView+TCCocoaExpand.m in Sources */,
 				5B79A0A31CC0C2BE00325F0A /* main.m in Sources */,
+				5340BE1F1DF7B9DD00E8DBC6 /* NSData+TCCocoaExpand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +382,7 @@
 				5B79A0B71CC0C2BE00325F0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

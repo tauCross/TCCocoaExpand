@@ -20,6 +20,7 @@
 
 #import "NSString+TCCocoaExpand.h"
 #import "NSArray+TCCocoaExpand.h"
+#import "NSData+TCCocoaExpand.h"
 
 #import "MFMailComposeViewController+TCCocoaExpand.h"
 
