@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		530B69A31EBB148B008D7045 /* UIButton+TCCocoaExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 530B69A21EBB148B008D7045 /* UIButton+TCCocoaExpand.m */; };
 		5340BE1F1DF7B9DD00E8DBC6 /* NSData+TCCocoaExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5340BE1E1DF7B9DD00E8DBC6 /* NSData+TCCocoaExpand.m */; };
 		5B79A0A31CC0C2BE00325F0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B79A0A21CC0C2BE00325F0A /* main.m */; };
 		5B79A0A61CC0C2BE00325F0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B79A0A51CC0C2BE00325F0A /* AppDelegate.m */; };
@@ -27,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		530B69A11EBB148B008D7045 /* UIButton+TCCocoaExpand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+TCCocoaExpand.h"; sourceTree = "<group>"; };
+		530B69A21EBB148B008D7045 /* UIButton+TCCocoaExpand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TCCocoaExpand.m"; sourceTree = "<group>"; };
 		5340BE1D1DF7B9DD00E8DBC6 /* NSData+TCCocoaExpand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+TCCocoaExpand.h"; sourceTree = "<group>"; };
 		5340BE1E1DF7B9DD00E8DBC6 /* NSData+TCCocoaExpand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+TCCocoaExpand.m"; sourceTree = "<group>"; };
 		5B79A09E1CC0C2BE00325F0A /* TCCocoaExpand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCCocoaExpand.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +145,8 @@
 				5B79A0DB1CC0DF9900325F0A /* MFMailComposeViewController+TCCocoaExpand.m */,
 				5340BE1D1DF7B9DD00E8DBC6 /* NSData+TCCocoaExpand.h */,
 				5340BE1E1DF7B9DD00E8DBC6 /* NSData+TCCocoaExpand.m */,
+				530B69A11EBB148B008D7045 /* UIButton+TCCocoaExpand.h */,
+				530B69A21EBB148B008D7045 /* UIButton+TCCocoaExpand.m */,
 			);
 			path = TCCocoaExpand;
 			sourceTree = "<group>";
@@ -227,6 +232,7 @@
 				5B79A0C71CC0D29000325F0A /* UIFont+TCCocoaExpand.m in Sources */,
 				5B79A0D01CC0DB7500325F0A /* UIActionSheet+TCCocoaExpand.m in Sources */,
 				5B79A0D61CC0DE5700325F0A /* NSArray+TCCocoaExpand.m in Sources */,
+				530B69A31EBB148B008D7045 /* UIButton+TCCocoaExpand.m in Sources */,
 				5B79A0D91CC0DEFB00325F0A /* UIAlertView+TCCocoaExpand.m in Sources */,
 				5B79A0A31CC0C2BE00325F0A /* main.m in Sources */,
 				5340BE1F1DF7B9DD00E8DBC6 /* NSData+TCCocoaExpand.m in Sources */,

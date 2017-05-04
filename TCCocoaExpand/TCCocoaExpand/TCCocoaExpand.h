@@ -17,6 +17,7 @@
 #import "UIActionSheet+TCCocoaExpand.h"
 #import "UIAlertView+TCCocoaExpand.h"
 #import "UIImagePickerController+TCCocoaExpand.h"
+#import "UIButton+TCCocoaExpand.h"
 
 #import "NSString+TCCocoaExpand.h"
 #import "NSArray+TCCocoaExpand.h"
