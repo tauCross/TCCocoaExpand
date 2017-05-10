@@ -12,11 +12,12 @@
 
 @interface NSString (TCCocoaExpand)
 
-- (NSString *)sha256;
-- (NSString *)base64;
-- (NSString *)clearSpace;
-- (NSString *)encodeURL;
-- (NSString *)md5;
-- (NSURL *)url;
+- (NSString *)tc_sha1;
+- (NSString *)tc_sha256;
+- (NSString *)tc_base64;
+- (NSString *)tc_clearSpace;
+- (NSString *)tc_encodeURL;
+- (NSString *)tc_md5;
+- (NSURL *)tc_url;
 
 @end
