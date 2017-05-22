@@ -22,6 +22,38 @@
 
 @implementation UIView (TCCocoaExpand)
 
++ (void)load
+{
+    {
+        Method oriMethod = class_getInstanceMethod([UILabel class], @selector(setFrame:));
+        Method tcMethod = class_getInstanceMethod([UILabel class], @selector(tc_setFrame:));
+        method_exchangeImplementations(oriMethod, tcMethod);
+    }
+    {
+        Method oriMethod = class_getInstanceMethod([UILabel class], @selector(setCenter:));
+        Method tcMethod = class_getInstanceMethod([UILabel class], @selector(tc_setCenter:));
+        method_exchangeImplementations(oriMethod, tcMethod);
+    }
+}
+
+- (void)tc_setFrame:(CGRect)frame
+{
+    CGFloat scale = [UIScreen mainScreen].scale;
+    frame.origin.x = floor(frame.origin.x * scale) / scale;
+    frame.origin.y = floor(frame.origin.y * scale) / scale;
+    frame.size.width = floor(frame.size.width * scale) / scale;
+    frame.size.height = floor(frame.size.height * scale) / scale;
+    [self tc_setFrame:frame];
+}
+
+- (void)tc_setCenter:(CGPoint)center
+{
+    CGFloat scale = [UIScreen mainScreen].scale;
+    center.x = floor(center.x * scale) / scale;
+    center.y = floor(center.y * scale) / scale;
+    [self tc_setCenter:center];
+}
+
 - (void)setX:(CGFloat)x
 {
     self.frame = CGRectMake(x, self.y, self.width, self.height);
