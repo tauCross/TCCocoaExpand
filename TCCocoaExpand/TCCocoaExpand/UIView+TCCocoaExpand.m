@@ -124,7 +124,7 @@
 - (void)setCenterY:(CGFloat)centerY
 {
     CGFloat scale = [UIScreen mainScreen].scale;
-    self.center = CGPointMake(self.centerX, floor(centerY * scale));
+    self.center = CGPointMake(self.centerX, floor(centerY * scale) / scale);
 }
 
 - (CGFloat)centerY
