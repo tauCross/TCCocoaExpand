@@ -22,41 +22,10 @@
 
 @implementation UIView (TCCocoaExpand)
 
-+ (void)load
-{
-    {
-        Method oriMethod = class_getInstanceMethod([UILabel class], @selector(setFrame:));
-        Method tcMethod = class_getInstanceMethod([UILabel class], @selector(tc_setFrame:));
-        method_exchangeImplementations(oriMethod, tcMethod);
-    }
-    {
-        Method oriMethod = class_getInstanceMethod([UILabel class], @selector(setCenter:));
-        Method tcMethod = class_getInstanceMethod([UILabel class], @selector(tc_setCenter:));
-        method_exchangeImplementations(oriMethod, tcMethod);
-    }
-}
-
-- (void)tc_setFrame:(CGRect)frame
-{
-    CGFloat scale = [UIScreen mainScreen].scale;
-    frame.origin.x = floor(frame.origin.x * scale) / scale;
-    frame.origin.y = floor(frame.origin.y * scale) / scale;
-    frame.size.width = floor(frame.size.width * scale) / scale;
-    frame.size.height = floor(frame.size.height * scale) / scale;
-    [self tc_setFrame:frame];
-}
-
-- (void)tc_setCenter:(CGPoint)center
-{
-    CGFloat scale = [UIScreen mainScreen].scale;
-    center.x = floor(center.x * scale) / scale;
-    center.y = floor(center.y * scale) / scale;
-    [self tc_setCenter:center];
-}
-
 - (void)setX:(CGFloat)x
 {
-    self.frame = CGRectMake(x, self.y, self.width, self.height);
+    CGFloat scale = [UIScreen mainScreen].scale;
+    self.frame = CGRectMake(floor(x * scale) / scale, self.y, self.width, self.height);
 }
 
 - (CGFloat)x
@@ -66,7 +35,8 @@
 
 - (void)setY:(CGFloat)y
 {
-    self.frame = CGRectMake(self.x, y, self.width, self.height);
+    CGFloat scale = [UIScreen mainScreen].scale;
+    self.frame = CGRectMake(self.x, floor(y * scale) / scale, self.width, self.height);
 }
 
 - (CGFloat)y
@@ -76,7 +46,8 @@
 
 - (void)setWidth:(CGFloat)width
 {
-    self.frame = CGRectMake(self.x, self.y, width, self.height);
+    CGFloat scale = [UIScreen mainScreen].scale;
+    self.frame = CGRectMake(self.x, self.y, floor(width * scale) / scale, self.height);
 }
 
 - (CGFloat)width
@@ -86,7 +57,8 @@
 
 - (void)setHeight:(CGFloat)height
 {
-    self.frame = CGRectMake(self.x, self.y, self.width, height);
+    CGFloat scale = [UIScreen mainScreen].scale;
+    self.frame = CGRectMake(self.x, self.y, self.width, floor(height * scale) / scale);
 }
 
 - (CGFloat)height
@@ -96,7 +68,8 @@
 
 - (void)setTop:(CGFloat)top
 {
-    self.y = top;
+    CGFloat scale = [UIScreen mainScreen].scale;
+    self.y = floor(top * scale) / scale;
 }
 
 - (CGFloat)top
@@ -106,7 +79,8 @@
 
 - (void)setBottom:(CGFloat)bottom
 {
-    self.frame = CGRectMake(self.x, bottom - self.height, self.width, self.height);
+    CGFloat scale = [UIScreen mainScreen].scale;
+    self.frame = CGRectMake(self.x, floor(bottom * scale) / scale - self.height, self.width, self.height);
 }
 
 - (CGFloat)bottom
@@ -116,7 +90,8 @@
 
 - (void)setLeft:(CGFloat)left
 {
-    self.x = left;
+    CGFloat scale = [UIScreen mainScreen].scale;
+    self.x = floor(left * scale) / scale;
 }
 
 - (CGFloat)left
@@ -126,7 +101,8 @@
 
 - (void)setRight:(CGFloat)right
 {
-    self.frame = CGRectMake(right - self.width, self.y, self.width, self.height);
+    CGFloat scale = [UIScreen mainScreen].scale;
+    self.frame = CGRectMake(floor(right * scale) / scale - self.width, self.y, self.width, self.height);
 }
 
 - (CGFloat)right
@@ -136,7 +112,8 @@
 
 - (void)setCenterX:(CGFloat)centerX
 {
-    self.center = CGPointMake(centerX, self.centerY);
+    CGFloat scale = [UIScreen mainScreen].scale;
+    self.center = CGPointMake(floor(centerX * scale) / scale, self.centerY);
 }
 
 - (CGFloat)centerX
@@ -146,7 +123,8 @@
 
 - (void)setCenterY:(CGFloat)centerY
 {
-    self.center = CGPointMake(self.centerX, centerY);
+    CGFloat scale = [UIScreen mainScreen].scale;
+    self.center = CGPointMake(self.centerX, floor(centerY * scale));
 }
 
 - (CGFloat)centerY
@@ -154,11 +132,16 @@
     return CGRectGetMidY(self.frame);
 }
 
-- (CGSize)size {
+- (CGSize)size
+{
     return self.frame.size;
 }
 
-- (void)setSize:(CGSize)size {
+- (void)setSize:(CGSize)size
+{
+    CGFloat scale = [UIScreen mainScreen].scale;
+    size.width = floor(size.width * scale) / scale;
+    size.height = floor(size.height * scale) / scale;
     CGRect frame = self.frame;
     frame.size = size;
     self.frame = frame;
@@ -171,6 +154,9 @@
 
 - (void)setOrigin:(CGPoint)origin
 {
+    CGFloat scale = [UIScreen mainScreen].scale;
+    origin.x = floor(origin.x * scale) / scale;
+    origin.y = floor(origin.y * scale) / scale;
     CGRect frame = self.frame;
     frame.origin = origin;
     self.frame = frame;
