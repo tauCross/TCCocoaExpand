@@ -11,7 +11,7 @@
 #import "UIButton+TCCocoaExpand.h"
 #import "UIImage+TCCocoaExpand.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITextFieldDelegate, UITextViewDelegate>
 
 @end
 
@@ -20,19 +20,49 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIButton *button = [[UIButton alloc] init];
-    button.backgroundColor = [UIColor cyanColor];
-    [button setTitleColor:[UIColor brownColor] forState:UIControlStateNormal];
-    [button setTitle:@"12345" forState:UIControlStateNormal];
-    [button setImage:[UIImage imageWithColor:[UIColor redColor] size:CGSizeMake(50, 50)] forState:UIControlStateNormal];
-    button.frame = CGRectMake(100, 200, 200, 100);
-    [self.view addSubview:button];
-    [button titleImageCenterStyleWithOffset:20];
+    {
+        UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(20, 20, 200, 44)];
+        textField.backgroundColor = [UIColor brownColor];
+        textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
+        [self.view addSubview:textField];
+    }
+    {
+        UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(20, 80, 200, 44)];
+        textField.backgroundColor = [UIColor cyanColor];
+        textField.keyboardType = UIKeyboardTypeNumberPad;
+        [self.view addSubview:textField];
+    }
+    {
+        UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(20, 140, 200, 44)];
+        textField.backgroundColor = [UIColor yellowColor];
+        [self.view addSubview:textField];
+    }
+    {
+        UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(20, 200, 200, 44)];
+        textView.backgroundColor = [UIColor redColor];
+        textView.delegate = self;
+        textView.tc_allowCustomKeyboard = NO;
+        [self.view addSubview:textView];
+    }
+    {
+        UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(20, 260, 200, 44)];
+        textView.backgroundColor = [UIColor grayColor];
+        textView.tc_allowCustomKeyboard = NO;
+        [self.view addSubview:textView];
+    }
+    {
+        UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(20, 320, 200, 44)];
+        textView.backgroundColor = [UIColor grayColor];
+        textView.delegate = self;
+        textView.tc_allowCustomKeyboard = NO;
+        [self.view addSubview:textView];
+    }
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [self.view endEditing:YES];
 }
 
 @end

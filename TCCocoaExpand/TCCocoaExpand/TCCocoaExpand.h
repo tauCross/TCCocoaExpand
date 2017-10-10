@@ -18,6 +18,8 @@
 #import "UIAlertView+TCCocoaExpand.h"
 #import "UIImagePickerController+TCCocoaExpand.h"
 #import "UIButton+TCCocoaExpand.h"
+#import "UITextField+TCCocoaExpand.h"
+#import "UITextView+TCCocoaExpand.h"
 
 #import "NSString+TCCocoaExpand.h"
 #import "NSArray+TCCocoaExpand.h"

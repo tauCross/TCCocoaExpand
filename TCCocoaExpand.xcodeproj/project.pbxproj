@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		530B69A31EBB148B008D7045 /* UIButton+TCCocoaExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 530B69A21EBB148B008D7045 /* UIButton+TCCocoaExpand.m */; };
 		5340BE1F1DF7B9DD00E8DBC6 /* NSData+TCCocoaExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5340BE1E1DF7B9DD00E8DBC6 /* NSData+TCCocoaExpand.m */; };
+		537560171F8C99730065947C /* UITextField+TCCocoaExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 537560161F8C99730065947C /* UITextField+TCCocoaExpand.m */; };
+		5375601A1F8C998F0065947C /* UITextView+TCCocoaExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 537560191F8C998F0065947C /* UITextView+TCCocoaExpand.m */; };
+		5375601D1F8C99C80065947C /* UIApplication+TCCocoaExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5375601C1F8C99C80065947C /* UIApplication+TCCocoaExpand.m */; };
 		5B79A0A31CC0C2BE00325F0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B79A0A21CC0C2BE00325F0A /* main.m */; };
 		5B79A0A61CC0C2BE00325F0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B79A0A51CC0C2BE00325F0A /* AppDelegate.m */; };
 		5B79A0A91CC0C2BE00325F0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B79A0A81CC0C2BE00325F0A /* ViewController.m */; };
@@ -32,6 +35,12 @@
 		530B69A21EBB148B008D7045 /* UIButton+TCCocoaExpand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TCCocoaExpand.m"; sourceTree = "<group>"; };
 		5340BE1D1DF7B9DD00E8DBC6 /* NSData+TCCocoaExpand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+TCCocoaExpand.h"; sourceTree = "<group>"; };
 		5340BE1E1DF7B9DD00E8DBC6 /* NSData+TCCocoaExpand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+TCCocoaExpand.m"; sourceTree = "<group>"; };
+		537560151F8C99730065947C /* UITextField+TCCocoaExpand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+TCCocoaExpand.h"; sourceTree = "<group>"; };
+		537560161F8C99730065947C /* UITextField+TCCocoaExpand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+TCCocoaExpand.m"; sourceTree = "<group>"; };
+		537560181F8C998F0065947C /* UITextView+TCCocoaExpand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+TCCocoaExpand.h"; sourceTree = "<group>"; };
+		537560191F8C998F0065947C /* UITextView+TCCocoaExpand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+TCCocoaExpand.m"; sourceTree = "<group>"; };
+		5375601B1F8C99C80065947C /* UIApplication+TCCocoaExpand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TCCocoaExpand.h"; sourceTree = "<group>"; };
+		5375601C1F8C99C80065947C /* UIApplication+TCCocoaExpand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+TCCocoaExpand.m"; sourceTree = "<group>"; };
 		5B79A09E1CC0C2BE00325F0A /* TCCocoaExpand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCCocoaExpand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B79A0A21CC0C2BE00325F0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5B79A0A41CC0C2BE00325F0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -147,6 +156,12 @@
 				5340BE1E1DF7B9DD00E8DBC6 /* NSData+TCCocoaExpand.m */,
 				530B69A11EBB148B008D7045 /* UIButton+TCCocoaExpand.h */,
 				530B69A21EBB148B008D7045 /* UIButton+TCCocoaExpand.m */,
+				537560151F8C99730065947C /* UITextField+TCCocoaExpand.h */,
+				537560161F8C99730065947C /* UITextField+TCCocoaExpand.m */,
+				537560181F8C998F0065947C /* UITextView+TCCocoaExpand.h */,
+				537560191F8C998F0065947C /* UITextView+TCCocoaExpand.m */,
+				5375601B1F8C99C80065947C /* UIApplication+TCCocoaExpand.h */,
+				5375601C1F8C99C80065947C /* UIApplication+TCCocoaExpand.m */,
 			);
 			path = TCCocoaExpand;
 			sourceTree = "<group>";
@@ -177,11 +192,12 @@
 		5B79A0961CC0C2BE00325F0A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = tauCross;
 				TargetAttributes = {
 					5B79A09D1CC0C2BE00325F0A = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 3293WRUKK7;
 					};
 				};
 			};
@@ -222,9 +238,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B79A0A91CC0C2BE00325F0A /* ViewController.m in Sources */,
+				5375601D1F8C99C80065947C /* UIApplication+TCCocoaExpand.m in Sources */,
 				5B79A0BD1CC0C5BB00325F0A /* UIView+TCCocoaExpand.m in Sources */,
 				5B79A0CD1CC0DA1700325F0A /* NSString+TCCocoaExpand.m in Sources */,
 				5B79A0C41CC0CFCA00325F0A /* UIColor+TCCocoaExpand.m in Sources */,
+				537560171F8C99730065947C /* UITextField+TCCocoaExpand.m in Sources */,
 				5B79A0DC1CC0DF9900325F0A /* MFMailComposeViewController+TCCocoaExpand.m in Sources */,
 				5B79A0D31CC0DCA500325F0A /* UIImagePickerController+TCCocoaExpand.m in Sources */,
 				5B79A0A61CC0C2BE00325F0A /* AppDelegate.m in Sources */,
@@ -235,6 +253,7 @@
 				530B69A31EBB148B008D7045 /* UIButton+TCCocoaExpand.m in Sources */,
 				5B79A0D91CC0DEFB00325F0A /* UIAlertView+TCCocoaExpand.m in Sources */,
 				5B79A0A31CC0C2BE00325F0A /* main.m in Sources */,
+				5375601A1F8C998F0065947C /* UITextView+TCCocoaExpand.m in Sources */,
 				5340BE1F1DF7B9DD00E8DBC6 /* NSData+TCCocoaExpand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,13 +289,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -314,13 +341,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -347,9 +382,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3293WRUKK7;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/TCCocoaExpand/CocoaExpand.pch";
 				INFOPLIST_FILE = TCCocoaExpand/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = p.tc.TCCocoaExpand;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -360,9 +396,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3293WRUKK7;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/TCCocoaExpand/CocoaExpand.pch";
 				INFOPLIST_FILE = TCCocoaExpand/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = p.tc.TCCocoaExpand;
 				PRODUCT_NAME = "$(TARGET_NAME)";
