@@ -112,8 +112,7 @@
 
 - (void)setCenterX:(CGFloat)centerX
 {
-    CGFloat scale = [UIScreen mainScreen].scale;
-    self.center = CGPointMake(floor(centerX * scale) / scale, self.centerY);
+    self.left = centerX - self.width / 2;
 }
 
 - (CGFloat)centerX
@@ -123,8 +122,7 @@
 
 - (void)setCenterY:(CGFloat)centerY
 {
-    CGFloat scale = [UIScreen mainScreen].scale;
-    self.center = CGPointMake(self.centerX, floor(centerY * scale) / scale);
+    self.top = centerY - self.height / 2;
 }
 
 - (CGFloat)centerY
