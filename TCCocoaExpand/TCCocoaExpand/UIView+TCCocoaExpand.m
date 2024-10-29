@@ -22,141 +22,139 @@
 
 @implementation UIView (TCCocoaExpand)
 
-- (void)setX:(CGFloat)x
+- (void)setTc_x:(CGFloat)tc_x
 {
     CGFloat scale = [UIScreen mainScreen].scale;
-    self.frame = CGRectMake(floor(x * scale) / scale, self.y, self.width, self.height);
+    self.frame = CGRectMake(floor(tc_x * scale) / scale, self.tc_y, self.tc_width, self.tc_height);
 }
 
-- (CGFloat)x
+- (CGFloat)tc_x
 {
     return CGRectGetMinX(self.frame);
 }
 
-- (void)setY:(CGFloat)y
+- (void)setTc_y:(CGFloat)tc_y
 {
     CGFloat scale = [UIScreen mainScreen].scale;
-    self.frame = CGRectMake(self.x, floor(y * scale) / scale, self.width, self.height);
+    self.frame = CGRectMake(self.tc_x, floor(tc_y * scale) / scale, self.tc_width, self.tc_height);
 }
 
-- (CGFloat)y
+- (CGFloat)tc_y
 {
     return CGRectGetMinY(self.frame);
 }
 
-- (void)setWidth:(CGFloat)width
+- (void)setTc_width:(CGFloat)tc_width
 {
     CGFloat scale = [UIScreen mainScreen].scale;
-    self.frame = CGRectMake(self.x, self.y, floor(width * scale) / scale, self.height);
+    self.frame = CGRectMake(self.tc_x, self.tc_y, floor(tc_width * scale) / scale, self.tc_height);
 }
 
-- (CGFloat)width
+- (CGFloat)tc_width
 {
     return CGRectGetWidth(self.frame);
 }
 
-- (void)setHeight:(CGFloat)height
+- (void)setTc_height:(CGFloat)tc_height
 {
     CGFloat scale = [UIScreen mainScreen].scale;
-    self.frame = CGRectMake(self.x, self.y, self.width, floor(height * scale) / scale);
+    self.frame = CGRectMake(self.tc_x, self.tc_y, self.tc_width, floor(tc_height * scale) / scale);
 }
 
-- (CGFloat)height
+- (CGFloat)tc_height
 {
     return CGRectGetHeight(self.frame);
 }
 
-- (void)setTop:(CGFloat)top
+- (void)setTc_top:(CGFloat)tc_top
+{
+    self.tc_y = tc_top;
+}
+
+- (CGFloat)tc_top
+{
+    return self.tc_y;
+}
+
+- (void)setTc_bottom:(CGFloat)tc_bottom
 {
     CGFloat scale = [UIScreen mainScreen].scale;
-    self.y = floor(top * scale) / scale;
+    self.frame = CGRectMake(self.tc_x, floor(tc_bottom * scale) / scale - self.tc_height, self.tc_width, self.tc_height);
 }
 
-- (CGFloat)top
-{
-    return self.y;
-}
-
-- (void)setBottom:(CGFloat)bottom
-{
-    CGFloat scale = [UIScreen mainScreen].scale;
-    self.frame = CGRectMake(self.x, floor(bottom * scale) / scale - self.height, self.width, self.height);
-}
-
-- (CGFloat)bottom
+- (CGFloat)tc_bottom
 {
     return CGRectGetMaxY(self.frame);
 }
 
-- (void)setLeft:(CGFloat)left
+- (void)setTc_left:(CGFloat)tc_left
+{
+    self.tc_x = tc_left;
+}
+
+- (CGFloat)tc_left
+{
+    return self.tc_x;
+}
+
+- (void)setTc_right:(CGFloat)tc_right
 {
     CGFloat scale = [UIScreen mainScreen].scale;
-    self.x = floor(left * scale) / scale;
+    self.frame = CGRectMake(floor(tc_right * scale) / scale - self.tc_width, self.tc_y, self.tc_width, self.tc_height);
 }
 
-- (CGFloat)left
-{
-    return self.x;
-}
-
-- (void)setRight:(CGFloat)right
-{
-    CGFloat scale = [UIScreen mainScreen].scale;
-    self.frame = CGRectMake(floor(right * scale) / scale - self.width, self.y, self.width, self.height);
-}
-
-- (CGFloat)right
+- (CGFloat)tc_right
 {
     return CGRectGetMaxX(self.frame);
 }
 
-- (void)setCenterX:(CGFloat)centerX
+- (void)setTc_centerX:(CGFloat)tc_centerX
 {
-    self.left = centerX - self.width / 2;
+    self.tc_left = tc_centerX - self.tc_width / 2;
 }
 
-- (CGFloat)centerX
+- (CGFloat)tc_centerX
 {
     return CGRectGetMidX(self.frame);
 }
 
-- (void)setCenterY:(CGFloat)centerY
+- (void)setTc_centerY:(CGFloat)tc_centerY
 {
-    self.top = centerY - self.height / 2;
+    self.tc_top = tc_centerY - self.tc_height / 2;
 }
 
-- (CGFloat)centerY
+- (CGFloat)tc_centerY
 {
     return CGRectGetMidY(self.frame);
 }
 
-- (CGSize)size
+- (CGSize)tc_size
 {
     return self.frame.size;
 }
 
-- (void)setSize:(CGSize)size
+- (void)setTc_size:(CGSize)tc_size
 {
     CGFloat scale = [UIScreen mainScreen].scale;
-    size.width = floor(size.width * scale) / scale;
-    size.height = floor(size.height * scale) / scale;
+    tc_size.width = floor(tc_size.width * scale) / scale;
+    tc_size.height = floor(tc_size.height * scale) / scale;
     CGRect frame = self.frame;
-    frame.size = size;
+    frame.size = tc_size;
     self.frame = frame;
 }
 
-- (CGPoint)origin
+- (CGPoint)tc_origin
 {
     return self.frame.origin;
 }
 
-- (void)setOrigin:(CGPoint)origin
+- (void)setTc_origin:(CGPoint)tc_origin
 {
     CGFloat scale = [UIScreen mainScreen].scale;
-    origin.x = floor(origin.x * scale) / scale;
-    origin.y = floor(origin.y * scale) / scale;
+    tc_origin.x = floor(tc_origin.x * scale) / scale;
+    tc_origin.y = floor(tc_origin.y * scale) / scale;
     CGRect frame = self.frame;
-    frame.origin = origin;
+    frame.origin = tc_origin;
     self.frame = frame;
 }
 
